@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<meta charset="UTF-8">
+<html>
+	<head>
+		<title>服务器地址</title>
+		<link rel="shortcut icon" href="icon.png">
+		<style type="text/css">
+			@font-face {
+				font-family: '楷体';
+				src: url('simkai.ttf');
+					font-weight: normal;
+				font-style: normal;
+			}
+
+			textarea {
+				resize: none;
+				height: 13px;
+				border: none;
+				font-family:"楷体";
+				overflow: hidden;
+				outline: none;
+				background-color:rgb(228, 255, 255);
+			}
+
+			html,body {
+				font-family: "楷体";
+				background-color:rgb(228, 255, 255);
+			}
+
+			footer {
+				color: #c6c6c6;
+				text-align: center;
+			}
+
+			a {
+				text-decoration: none;
+				color: #909090
+			}
+
+			a:hover {
+				text-decoration: none;
+				color: rgb(48, 120, 255)
+			}
+			
+			button {
+				border-width: 2.5px;
+				border-color: rgb(85, 170, 255);
+				background-color: rgb(85, 170, 255);
+				color:#ffffff;
+				border-radius:5px;
+				font-family:"楷体";
+			}
+			button:hover{
+				cursor:pointer;
+			}
+		</style>
+		<script type="text/javascript">
+			function copy(dx) {
+				var e = document.getElementById(dx);
+				e.select();
+				document.execCommand("Copy");
+				alert("复制成功！");
+				window.getSelection().empty()
+			}
+		</script>
+	</head>
+	<body>
+		<h1 align="center">服务器地址</h1>
+		<br>
+		<p align="center">
+			短链接：
+			<textarea id="short" style="width: 200px" readonly>play.zmdnotfound.cf:13924</textarea>
+			<button onclick="copy('short')">复制</button>
+		</p>
+		<p align="center">
+			长链接(短链接连接不上时使用)：
+			<textarea id="long" style="width: 250px;" readonly>zmdnotfound.e3.luyouxia.net:13924</textarea>
+			<button onclick="copy('long')">复制</button>
+		</p>
+		<br>
+		<center>
+			<button onclick="window.open('https://www.123pan.com/s/uTv9-2qfNh.html')" style="width:200px;height:30px;">获取整合包</button>
+		</center>
+		<br><br><br><br><br><br>
+		<footer align="center">
+			此页面由 <a href="https://github.com/">GitHub</a> 托管
+		</footer>
+	</body>
+</html>
