@@ -1,0 +1,59 @@
+@font-face {
+	font-family: '楷体';
+	font-weight: normal;
+	font-style: normal;
+}
+
+textarea {
+	resize: none;
+	height: 13px;
+	border: none;
+	font-family: "楷体";
+	overflow: hidden;
+	outline: none;
+	background-color: rgb(228, 255, 255);
+}
+
+html,
+body {
+	font-family: "楷体";
+	background-color: rgb(228, 255, 255);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100% 100%;
+}
+
+footer {
+	text-align: center;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: #e4ffff;
+	color: #c6c6c6;
+	text-align: center;
+	padding: 10px;
+}
+
+a {
+	text-decoration: none;
+	color: #909090
+}
+
+a:hover {
+	text-decoration: none;
+	color: rgb(48, 120, 255)
+}
+
+button {
+	border-width: 2.5px;
+	border-color: rgb(85, 170, 255);
+	background-color: rgb(85, 170, 255);
+	color: #ffffff;
+	border-radius: 5px;
+	font-family: "楷体";
+}
+
+button:hover {
+	cursor: pointer;
+}
