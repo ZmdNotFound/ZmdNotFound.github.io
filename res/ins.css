@@ -1,0 +1,124 @@
+@font-face {
+	font-family: '楷体';
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+	font-family: "楷体";
+	/*background-color: rgb(228, 255, 255);*/
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-image: url('./background.jpg');
+	background-size: cover;
+}
+
+footer {
+	text-align: center;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: #464646;
+	color: #c6c6c6;
+	text-align: center;
+	padding: 10px;
+}
+
+.footlink {
+	text-decoration: none;
+	color: #909090
+}
+
+.footlink:hover {
+	text-decoration: none;
+	color: rgb(48, 120, 255)
+}
+
+button {
+	border-radius: 5px;
+	font-family: "楷体";
+	background-color: #00aaff;
+	color: #FFFFFF;
+	border: 1px solid lightgray;
+	text-decoration: none;
+}
+
+button:hover {
+	cursor: pointer;
+	background-color: #0498e2;
+}
+
+.roundbox {
+	position: relative;
+	border-radius: 10px;
+	padding: 20px;
+	width: 60%;
+	margin-top: 100px;
+	top: 10%;
+	left: 20%;
+	border: 1px solid gray;
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+.return {
+	position: absolute;
+	top: -20px;
+	left: 5px;
+	width: 50px;
+	color: #000000;
+	text-decoration: none;
+}
+
+.return:hover {
+	text-decoration: none;
+	color: #55aaff;
+}
+
+.githublink {
+	position: relative;
+	text-decoration: none;
+	color: #909090
+}
+
+.githublink:hover {
+	text-decoration: none;
+	color: #55aaff;
+}
+
+.githublink:hover::before {
+	content: "打不开属正常现象";
+	position: absolute;
+	top: -30px;
+	left: -60%;
+	width: 150px;
+	background-color: #f1f1f1;
+	border: 1px solid gray;
+	padding: 5px;
+	border-radius: 5px;
+	color: #000000;
+}
+
+.mods {
+	text-decoration: none;
+	position: relative;
+	color: #38cc2d;
+}
+
+.mods:hover {
+	text-decoration: none;
+	color: #55aaff;
+}
+
+.mods:hover::before {
+	content: "尚未完成！";
+	position: absolute;
+	top: 15px;
+	left: 10%;
+	width: 80px;
+	background-color: #f1f1f1;
+	border: 1px solid gray;
+	padding: 5px;
+	border-radius: 5px;
+	color: #ff0000;
+}
