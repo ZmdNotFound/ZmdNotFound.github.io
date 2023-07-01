@@ -1,5 +1,5 @@
-function redirectToPage() {
-	window.location.href = "./instruction.html"
+function redirectToPage(href) {
+	window.location.href = href
 }
 
 function Copy(dx) {
