@@ -2,13 +2,31 @@ function redirectToPage(href) {
 	window.location.href = href
 }
 
-function Copy(dx) {
-	var text = document.getElementById(dx).innerText;
-	var textarea = document.createElement("textarea");
-	textarea.value = text;
-	document.body.appendChild(textarea);
-	textarea.select();
-	document.execCommand("copy");
-	document.body.removeChild(textarea);
-	alert("复制成功！");
-}
+document.addEventListener('DOMContentLoaded', function() {
+  const showButton = document.getElementById('show-button');
+  const closeButton = document.getElementById('close-button');
+  const notification = document.getElementById('notification');
+  const notificationMessage = document.getElementById('notification-message');
+
+  showButton.addEventListener('click', () => {
+    const copyText = showButton.getAttribute('data-copy-text');
+    
+    if (copyText) {
+      navigator.clipboard.writeText(copyText)
+        .then(() => {
+          notificationMessage.textContent = '复制成功';
+          notification.classList.add('show');
+          setTimeout(() => {
+            notification.classList.remove('show');
+          }, 3000);
+        })
+        .catch((error) => {
+          console.error('复制出错: ', error);
+        });
+    }
+  });
+
+  closeButton.addEventListener('click', () => {
+    notification.classList.remove('show');
+  });
+});

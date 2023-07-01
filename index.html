@@ -10,20 +10,36 @@
 	<body>
 		<h1 align="center">服务器地址</h1>
 		<br>
-		<p align="center">
+		<p style="position: relative;" align="center">
 			唯一链接：
 			<a href="http://play.zmdnotfound.cf:20111" id="link" class="playlink" target="_blank">play.zmdnotfound.cf</a>
-			<button onclick="Copy('link')">复制</button>
+			<button data-copy-text="play.zmdnotfound.cf" id="show-button" style="height: 25px; width: 50px;">复制</button>
+			<br>
+			<div class="info">
+				<h3 align="center">
+					游戏信息：
+				</h4>
+				<li>游戏版本：1.16.5</li>
+				<li>Mod 加载器：Fabric</li>
+				<li>
+					Mod 数量：42
+					<br>
+					&nbsp;&nbsp;(详见 使用说明→所有 Mod 列表)
+				</li>
+			</div>
 		</p>
-		<br>
 		<center>
 			<button onclick="window.open('https://www.123pan.com/s/uTv9-axaNh.html')"
 				style="width:100px;height:30px;">获取整合包</button>
 			<button onclick="redirectToPage('./instruction.html')" style="width:100px;height:30px;">使用说明</button>
 		</center>
+		<div id="notification" class="hide">
+		  <span id="notification-message"></span>
+		  <button id="close-button">&times;</button>
+		</div>
 		<footer align="center">
-			此页面由 <a href="https://github.com/" class="footlink">GitHub</a> 托管 | <a
-				href="https://www.123pan.com/s/uTv9-LjfNh.html" class="footlink">获取极域杀手</a>
+			此页面由 <a href="https://github.com/" class="githublink" target="_blank">GitHub</a> 托管 | <a
+				href="https://www.123pan.com/s/uTv9-maaNh.html" class="footlink" target="_blank">获取极域杀手</a>
 		</footer>
 	</body>
 </html>
